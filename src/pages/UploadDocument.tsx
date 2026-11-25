@@ -281,7 +281,7 @@ function UploadDocument() {
             <button
               type="button"
               onClick={() => addTag()}
-              className="rounded-lg bg-blue-600 px-4 text-sm text-white hover:bg-blue-700"
+              className="rounded-lg bg-blue-600 px-4 text-sm text-white hover:bg-blue-700 cursor-pointer"
             >
               Add
             </button>
@@ -298,7 +298,7 @@ function UploadDocument() {
                 key={tag}
                 type="button"
                 onClick={() => addTag(tag)}
-                className="rounded-full border border-gray-300 px-3 py-1 text-sm hover:bg-blue-50"
+                className="rounded-full border border-gray-300 px-3 py-1 text-sm hover:bg-blue-50 cursor-pointer"
               >
                 + {tag}
               </button>
@@ -316,7 +316,7 @@ function UploadDocument() {
                 <button
                   type="button"
                   onClick={() => removeTag(tag)}
-                  className="font-bold"
+                  className="font-bold cursor-pointer"
                 >
                   ×
                 </button>
@@ -360,7 +360,7 @@ function UploadDocument() {
           <button
             type="submit"
             disabled={uploading}
-            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white disabled:opacity-50"
+            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white disabled:opacity-50 cursor-pointer"
           >
             {uploading ? "Uploading..." : "Submit Document"}
           </button>

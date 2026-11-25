@@ -169,7 +169,7 @@ function SearchDocuments() {
         <button
           onClick={searchDocuments}
           disabled={loading}
-          className="rounded-lg bg-blue-600 p-3 font-medium text-white hover:bg-blue-700 disabled:opacity-50"
+          className="rounded-lg bg-blue-600 p-3 font-medium text-white hover:bg-blue-700 disabled:opacity-50 cursor-pointer"
         >
           {loading ? "Searching..." : "Search Documents"}
         </button>
@@ -200,14 +200,14 @@ function SearchDocuments() {
             <div className="flex gap-2">
               <button
                 onClick={() => setSelectedDocument(doc)}
-                className="rounded-lg border px-4 py-2 text-sm hover:bg-gray-50"
+                className="rounded-lg border px-4 py-2 text-sm hover:bg-gray-50 cursor-pointer"
               >
                 Preview
               </button>
 
               <button
                 onClick={() => downloadDocument(doc)}
-                className="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700"
+                className="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700 cursor-pointer"
               >
                 Download
               </button>
@@ -239,7 +239,7 @@ function SearchDocuments() {
 
               <button
                 onClick={() => setSelectedDocument(null)}
-                className="rounded-lg px-3 py-1 text-xl text-gray-500 hover:bg-gray-100"
+                className="rounded-lg px-3 py-1 text-xl text-gray-500 hover:bg-gray-100 cursor-pointer"
               >
                 ×
               </button>
